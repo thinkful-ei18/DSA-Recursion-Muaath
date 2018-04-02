@@ -25,3 +25,14 @@ function arrDouble(arr) {
 
 // console.log(arrDouble([1, 2, 3, 4, 5]));
 // console.log(arrDouble([20, 40, 60, 80]));
+
+//Reverse String
+function revString(str) {
+  if (str === '') {
+    return '';
+  }
+
+  return str[str.length - 1] + revString(str.slice(0, -1));
+}
+
+console.log(revString('Lakers'));
