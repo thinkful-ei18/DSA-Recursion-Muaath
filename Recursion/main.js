@@ -48,12 +48,9 @@ function numTriangle(n) {
 // console.log(numTriangle(10));
 
 function stringSeperator(str, seperator) {
-  console.log(str);
   if (str.indexOf(seperator) === -1) {
-    return [str.slice(0, str.length)];
+    return [str];
   }
-
-  str.indexOf(seperator);
 
   return [
     str.slice(0, str.indexOf(seperator)),
