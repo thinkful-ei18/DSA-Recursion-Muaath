@@ -35,4 +35,14 @@ function revString(str) {
   return str[str.length - 1] + revString(str.slice(0, -1));
 }
 
-console.log(revString('Lakers'));
+// console.log(revString('Lakers'));
+
+function numTriangle(n) {
+  if (n === 0) {
+    return 0;
+  }
+
+  return n + numTriangle(n - 1);
+}
+
+// console.log(numTriangle(10));
